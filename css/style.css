@@ -1,0 +1,143 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+}
+
+input{
+  padding: .5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -10px #000;
+}
+
+.container{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: aliceblue;
+  padding: 15px 0;
+}
+
+
+.dashboard{
+  border-radius: 10px;
+  background: tomato;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  color: #fff;
+  text-shadow: 0 0 2px #fff;
+  text-align: center;
+}
+
+.dashboard-todo{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.dashboard-in-progress{
+  grid-column-start: 2;
+   grid-column-end: 3;
+}
+
+.dashboard-testing{
+  grid-column-start: 3;
+   grid-column-end: 4;
+}
+
+.dashboard-complete{
+  grid-column-start: 4;
+   grid-column-end: 4;
+}
+
+.dashboard-box{
+  padding: 1rem 0 0 0;
+  border-right: 1px solid #fff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.dashboard-box:last-child{
+  border-right: none;
+}
+
+.dashboard-header{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.items{
+  padding: 1rem 10px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.items::-webkit-scrollbar {
+  width: 5px;
+}
+.items::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.items::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.items::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.item{
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem 10px;
+  color: #000;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.item:last-child{
+  margin-bottom: 0;
+}
+
+.manage{
+  border-radius: 10px;
+  background: cornsilk;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.creating{
+
+}
+
+.creating input{
+  width: 400px;
+}
+
+.creating button{
+  color: #fff;
+  border: none;
+  background: tomato;
+  border-radius: 5px;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+#result{
+  margin-top: 10px;
+}
