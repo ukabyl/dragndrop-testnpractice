@@ -1,4 +1,4 @@
-Simple Todo App with vanilla JS
+Simple Todo App with vanilla JS https://ukabyl.github.io/dragndrop-testnpractice/
 
 ## Technologies used
 HTML CSS JS
