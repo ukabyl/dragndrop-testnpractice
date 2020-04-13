@@ -1,8 +1,6 @@
 class TodoApp {
   constructor() {
 
-    console.log(localStorage);
-
     const data = JSON.parse(localStorage.getItem('todoDataInfinBank'));
     console.log(data)
     this.data =  data || [];
